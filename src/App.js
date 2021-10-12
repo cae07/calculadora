@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Numbers from './Pages/Numbers';
+import Provider from './Context/Provider';
+import Header from './Pages/Header';
+import Display from './Pages/Display';
 
 function App() {
   return (
-    <div className="App">
-      <h1>App calculadora</h1>
-    </div>
+    <Provider>
+      <div className="App">
+        <Header />
+        <Display />
+        <Numbers />
+      </div>
+    </Provider>
   );
 }
 
